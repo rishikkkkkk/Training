@@ -61,53 +61,15 @@ Create and configure a systemd service and timer to automate a simple logging sc
 
 ## Procedure
 
-1. Created a simple script that writes a log entry:
-   ```bash
-   echo "Hello Systemd" >> /tmp/systemd.log
-   ```
+1. Created a simple script that writes a log entry
 
-2. Created a **service file**:
-   ```bash
-   sudo nano /etc/systemd/system/logger.service
-   ```
-   Added the following:
-   ```ini
-   [Unit]
-   Description=Simple Logging Service
+2. Created a **service file**
 
-   [Service]
-   Type=oneshot
-   ExecStart=/bin/bash -c 'echo "Hello Systemd" >> /tmp/systemd.log'
-   ```
+3. Created a **timer file**
 
-3. Created a **timer file**:
-   ```bash
-   sudo nano /etc/systemd/system/logger.timer
-   ```
-   Added the following:
-   ```ini
-   [Unit]
-   Description=Run logger.service every minute
+4. Reloaded systemd and started the timer
 
-   [Timer]
-   OnBootSec=1min
-   OnUnitActiveSec=1min
-
-   [Install]
-   WantedBy=timers.target
-   ```
-
-4. Reloaded systemd and started the timer:
-   ```bash
-   sudo systemctl daemon-reload
-   sudo systemctl enable --now logger.timer
-   ```
-
-5. Verified the timer and checked logs:
-   ```bash
-   sudo systemctl status logger.timer
-   cat /tmp/systemd.log
-   ```
+5. Verified the timer and checked logs
 
 ---
 
@@ -124,7 +86,7 @@ Create and configure a systemd service and timer to automate a simple logging sc
 ---
 
 
-✅ **Result:** Automated logging using a systemd timer configured and verified successfully.
+
 
 
 
