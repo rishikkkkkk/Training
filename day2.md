@@ -5,16 +5,6 @@
 ## Objective
 Configure SSH key-based authentication between two EC2 instances, copy the public key to the remote server, disable password login, and verify key-based access.
 
----
-
-## Commands Used
-
-
-| `ssh-keygen -t ed25519 -C "ubuntu@ip-172-31-19-222"` | Generates a new SSH key pair using the Ed25519 algorithm. |
-| `ssh-copy-id -i ~/.ssh/id_ed25519.pub ubuntu@54.198.183.82` | Copies the public key to the remote EC2 server for key-based authentication. |
-| `sudo nano /etc/ssh/sshd_config` | Opens the SSH configuration file for editing. |
-| `sudo systemctl restart sshd` | Restarts the SSH service to apply new settings. |
-| `ssh ubuntu@54.198.183.82` | Connects to the remote EC2 instance using the SSH key. |
 
 ---
 
@@ -50,16 +40,6 @@ Configure SSH key-based authentication between two EC2 instances, copy the publi
 ## Objective
 Create and schedule a cron job that appends log data to a file at regular intervals.
 
----
-
-## Commands Used
-
-| Command | Description |
-|----------|--------------|
-| `crontab -e` | Opens the cron table for the current user to create or edit scheduled jobs. |
-| `*/5 * * * * echo "Test" >> /tmp/test.log` | Runs every 5 minutes and appends the word “Test” to `/tmp/test.log`. |
-| `crontab -l` | Lists all active cron jobs for the current user. |
-| `cat /tmp/test.log` | Displays the contents of the log file to verify cron job execution. |
 
 ---
 
@@ -77,18 +57,6 @@ Create and schedule a cron job that appends log data to a file at regular interv
 
 ## Objective
 Create and configure a systemd service and timer to automate a simple logging script.
-
----
-
-## Commands Used
-
-| `echo "Hello Systemd" >> /tmp/systemd.log` | Appends "Hello Systemd" text to the log file `/tmp/systemd.log`. |
-| `sudo nano /etc/systemd/system/logger.service` | Creates and edits a new systemd service file. |
-| `sudo nano /etc/systemd/system/logger.timer` | Creates and edits a new systemd timer file. |
-| `sudo systemctl daemon-reload` | Reloads systemd manager configuration after creating or modifying unit files. |
-| `sudo systemctl enable --now logger.timer` | Enables and starts the timer immediately. |
-| `sudo systemctl status logger.timer` | Displays the current status of the timer. |
-| `cat /tmp/systemd.log` | Verifies that log entries are being written periodically. |
 
 ---
 
@@ -155,5 +123,6 @@ Create and configure a systemd service and timer to automate a simple logging sc
 - Verified `/tmp/systemd.log` is updated automatically with “Hello Systemd”.  
 
 ---
+
 
 ✅ **Result:** Automated logging using a systemd timer configured and verified successfully.
