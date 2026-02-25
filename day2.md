@@ -51,7 +51,7 @@ Create and schedule a cron job that appends log data to a file at regular interv
    */5 * * * * echo "Test" >> /tmp/test.log
    ![alt text](images/day2t2.png)
 
-   # Lab 3 — systemd Timer
+# Lab 3 — systemd Timer
 
 ---
 
@@ -126,4 +126,5 @@ Create and configure a systemd service and timer to automate a simple logging sc
 
 
 ✅ **Result:** Automated logging using a systemd timer configured and verified successfully.
+
 
