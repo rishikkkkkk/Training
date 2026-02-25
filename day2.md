@@ -22,11 +22,11 @@ Configure SSH key-based authentication between two EC2 instances, copy the publi
 
 - SSH key pair created successfully on the client EC2 instance. 
 
-![alt text](<Screenshot 2026-02-25 152510.png>)
+![alt text](<images/Screenshot 2026-02-25 152510.png>)
 - Public key added to the remote server’s `authorized_keys` file.  
-![alt text](<Screenshot 2026-02-25 190059.png>)
+![alt text](<images/Screenshot 2026-02-25 190059.png>)
 - Password authentication disabled in `/etc/ssh/sshd_config`.
-![alt text](<Screenshot 2026-02-25 190524.png>)  
+![alt text](<images/Screenshot 2026-02-25 190524.png>)  
 - Verified successful login using SSH key only.  
 
 ---
@@ -49,7 +49,7 @@ Create and schedule a cron job that appends log data to a file at regular interv
 2. Added the following cron job entry:
    ```bash
    */5 * * * * echo "Test" >> /tmp/test.log
-   ![alt text](day2t2.png)
+   ![alt text](images/day2t2.png)
 
    # Lab 3 — systemd Timer
 
@@ -114,15 +114,16 @@ Create and configure a systemd service and timer to automate a simple logging sc
 
 ## Output
 
-![alt text](<Screenshot 2026-02-25 195948.png>)
+![alt text](<images/Screenshot 2026-02-25 195948.png>)
 - Service and timer files created successfully.  
-![alt text](<Screenshot 2026-02-25 200000.png>)
-![alt text](<Screenshot 2026-02-25 200007.png>)
+![alt text](<images/Screenshot 2026-02-25 200000.png>)
+![alt text](<images/Screenshot 2026-02-25 200007.png>)
 - Timer triggers the service every minute. 
-![alt text](<Screenshot 2026-02-25 200018.png>) 
+![alt text](<images/Screenshot 2026-02-25 200018.png>) 
 - Verified `/tmp/systemd.log` is updated automatically with “Hello Systemd”.  
 
 ---
 
 
 ✅ **Result:** Automated logging using a systemd timer configured and verified successfully.
+
