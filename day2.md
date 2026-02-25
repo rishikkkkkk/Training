@@ -47,10 +47,9 @@ Create and schedule a cron job that appends log data to a file at regular interv
 
 1. Opened the cron table for editing using `crontab -e`.  
 2. Added the following cron job entry:
-   ```bash
-   */5 * * * * echo "Test" >> /tmp/test.log
-   ![alt text](images/day2t2.png)
 
+
+![alt text](images/day2t2.png)
 # Lab 3 — systemd Timer
 
 ---
@@ -126,5 +125,6 @@ Create and configure a systemd service and timer to automate a simple logging sc
 
 
 ✅ **Result:** Automated logging using a systemd timer configured and verified successfully.
+
 
 
