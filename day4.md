@@ -12,7 +12,7 @@ To create a Bash script that monitors disk usage and generates an alert when dis
 
 ## Output
 
-![alt text](image.png)
+![alt text](/images/day4/image.png)
 
 
 # Lab 2
@@ -27,31 +27,32 @@ To capture and analyze HTTP network traffic and observe the TCP three-way handsh
 
 ## Output
 
-![alt text](image-2.png)
+![alt text](/images/day4/image-2.png)
 
-![alt text](image-3.png)
+![alt text](/images/day4/image-3.png)
 
 
 # Homework
 ## Created a script and it shows the number of arguments
-![alt text](image-1.png)
-![alt text](image-5.png)
+![alt text](/images/day4/image-1.png)
+![alt text](/images/day4/image-5.png)
 
 ## Process my sytem used the most
-![alt text](image-4.png)
+![alt text](/images/day4/image-4.png)
 
 ## Largest directory in /var/log
-![alt text](image-6.png)
+![alt text](/images/day4/image-6.png)
 
 ## Last 20 SSH Logs
-![alt text](image-7.png)
+![alt text](/images/day4/image-7.png)
 
 ## Scheduling a Script 
 #### via cronjob
-![alt text](image-8.png)
+![alt text](/images/day4/image-8.png)
 
 #### via systemd service & timer
-![alt text](image-9.png)
+![alt text](/images/day4/image-9.png)
 
-![alt text](<Screenshot 2026-02-26 235938.png>)
+![alt text](</images/day4/Screenshot 2026-02-26 235938.png>)
+
 
