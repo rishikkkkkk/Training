@@ -28,6 +28,7 @@ Verify how the Linux system is identified on the network and understand how netw
 ![alt text](<images/Screenshot 2026-02-26 125042.png>)
 
 - Used dig to confirm DNS resolution
+
  ![alt text](<images/Screenshot 2026-02-26 125135.png>)
 
 The system network identity and connectivity were successfully verified.
@@ -212,5 +213,6 @@ Configure a local domain name using the `/etc/hosts` file and verify local DNS r
 A local domain was successfully created using the `/etc/hosts` file.
 
 The system resolved the custom domain name without external DNS services, demonstrating local DNS resolution and successful web server access.
+
 
 
