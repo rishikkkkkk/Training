@@ -22,13 +22,13 @@ Verify how the Linux system is identified on the network and understand how netw
 - Got network interface information for **enp0s3**
 - Got default gateway
 - also Ping
-![alt text](<Screenshot 2026-02-26 124812.png>)
+![alt text](<images/Screenshot 2026-02-26 124812.png>)
 
 - Used Ping domain and Traceroute
-![alt text](<Screenshot 2026-02-26 125042.png>)
+![alt text](<images/Screenshot 2026-02-26 125042.png>)
 
 - Used dig to confirm DNS resolution
-![alt text](<Screenshot 2026-02-26 125135.png>)
+![alt text](<images/Screenshot 2026-02-26 125135.png>)
 
 The system network identity and connectivity were successfully verified.
 
@@ -46,7 +46,7 @@ Verify each step required for a Linux system to access the internet and identify
 ---
 
 ## Output
-![alt text](image.png)
+![alt text](images/image.png)
 
 ## Conclusion
 The internet connectivity flow was successfully verified.  
@@ -69,7 +69,7 @@ Investigate how domain names are resolved into IP addresses and analyze DNS serv
 
 ## Output
 
-![alt text](image-1.png)
+![alt text](images/image-1.png)
 
 ## Conclusion
 DNS analysis was successfully performed.  
@@ -100,16 +100,16 @@ Install a web server and host a simple webpage locally to demonstrate that HTTP 
 ### Local Website Test
 curl http://localhost
 Hello from my server
-![alt text](<Screenshot 2026-02-26 141425.png>)
+![alt text](<images/Screenshot 2026-02-26 141425.png>)
 
-![alt text](<Screenshot 2026-02-26 141743.png>)
+![alt text](<images/Screenshot 2026-02-26 141743.png>)
 
 ### Access Using System IP
 ```
 curl http://10.0.2.15
 Hello from my server
 ```
-![alt text](<Screenshot 2026-02-26 142011.png>)
+![alt text](<images/Screenshot 2026-02-26 142011.png>)
 
 Result:  Website accessible using system network IP.
 
@@ -135,7 +135,7 @@ Verify that the web server is actively listening on the HTTP port and confirm th
 
 ## Output
 
-![alt text](image-2.png)
+![alt text](images/image-2.png)
 
 ## Conclusion
 The listening ports were successfully analyzed using the `ss` command.  
@@ -163,7 +163,7 @@ Verify application connectivity by fetching HTTP headers and downloading web con
 - Server: **Nginx**
 - Application responding successfully.
 
-![alt text](image-3.png)
+![alt text](images/image-3.png)
 
 ## Conclusion
 Application connectivity was successfully verified.  
@@ -185,7 +185,7 @@ Enable and configure the Uncomplicated Firewall (UFW) to control network access 
 
 ## Output
 
-![alt text](image-4.png)
+![alt text](images/image-4.png)
 
 ## Conclusion
 The UFW firewall was successfully enabled and configured to permit web traffic.  
@@ -203,11 +203,12 @@ Configure a local domain name using the `/etc/hosts` file and verify local DNS r
 4. Verified domain resolution using the ping command.
 5. Accessed the locally hosted website using the custom domain name through a web browser.
 
-![alt text](image-5.png)
+![alt text](images/image-5.png)
 ## Output
-![alt text](image-6.png)
+![alt text](images/image-6.png)
 
 
 ## Conclusion
-A local domain was successfully created using the `/etc/hosts` file.  
+A local domain was successfully created using the `/etc/hosts` file.
+
 The system resolved the custom domain name without external DNS services, demonstrating local DNS resolution and successful web server access.
