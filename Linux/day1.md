@@ -16,7 +16,7 @@ Create a new Linux user, switch to that user, and verify the user’s home direc
 
 ## Output
 
-![alt text](images/image1.png)
+![alt text](images/day1/image1.png)
 User `user1` was successfully created and verified.
 
 # Lab 2 — File Permissions
@@ -41,7 +41,7 @@ Create a file, modify permissions, change ownership, and verify access.
 5. Verified changes.
 
 ## Output
-![alt text](images/image2.png)
+![alt text](images/day1/image2.png)
 
 
 ## Result
@@ -66,7 +66,7 @@ Run a background process, identify its PID, and terminate it.
 4. Confirmed termination.
 
 ## Output
-![alt text](images/image3.png)
+![alt text](images/day1/image3.png)
 
 
 ## Result
@@ -91,7 +91,7 @@ Create and edit a file using Vim, then save and verify contents.
 4. Verified contents using `cat`.
 
 ## Output
-![alt text](images/image4.1.png)
+![alt text](images/day1/image4.1.png)
 
 
 ## Result
