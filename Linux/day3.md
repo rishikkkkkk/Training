@@ -213,5 +213,3 @@ Configure a local domain name using the `/etc/hosts` file and verify local DNS r
 A local domain was successfully created using the `/etc/hosts` file.
 
 The system resolved the custom domain name without external DNS services, demonstrating local DNS resolution and successful web server access.
-
-
