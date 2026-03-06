@@ -10,13 +10,13 @@ Remove it from main
 Keep clean history
 Push correctly
 ## Solution:
-![alt text](image.png)
-![alt text](image-1.png)
-![alt text](image-2.png)
-![alt text](image-3.png)
-![alt text](image-4.png)
-![alt text](image-5.png)
-![alt text](image-6.png)
+![alt text](images/day2/image.png)
+![alt text](images/day2/image-1.png)
+![alt text](images/day2/image-2.png)
+![alt text](images/day2/image-3.png)
+![alt text](images/day2/image-4.png)
+![alt text](images/day2/image-5.png)
+![alt text](images/day2/image-6.png)
 
 # Scenario 2 – Bad Commit Already Pushed
 ## Situation:
@@ -32,15 +32,15 @@ Keep history intact
 Push fix
 ## Solution:
 ### Firstly will pull changes the dev a made:
-![alt text](image-18.png)
+![alt text](images/day2/image-18.png)
 ### Making a bad commit:
-![alt text](image-19.png)
+![alt text](images/day2/image-19.png)
 ### Pushing bad commit :
-![alt text](image-20.png)
+![alt text](images/day2/image-20.png)
 ### Fixing it without rewriting history:
-![alt text](image-22.png)
-![alt text](image-21.png)
-![alt text](image-23.png)
+![alt text](images/day2/image-22.png)
+![alt text](images/day2/image-21.png)
+![alt text](images/day2/image-23.png)
 
 
 # Scenario 3 – Merge Conflict in Team Environment
@@ -57,20 +57,21 @@ Complete merge
 Push updated branch
 ## Solution:
 ### Created a feature/payment branch:
-![alt text](image-8.png)
+![alt text](images/day2/image-8.png)
 ### Created a file of main branch:
-![alt text](image-9.png)
+![alt text](images/day2/image-9.png)
 ### Created same file in feature/payment branch:
-![alt text](image-10.png)
-![alt text](image-11.png)
+![alt text](images/day2/image-10.png)
+![alt text](images/day2/image-11.png)
 ### Now merging main branch to feature/payment branch:
-![alt text](image-12.png)
-![alt text](image-13.png)
+![alt text](images/day2/image-12.png)
+![alt text](images/day2/image-13.png)
 ### git status:
-![alt text](image-14.png)
+![alt text](images/day2/image-14.png)
 ### checked the conflicted file:
-![alt text](image-15.png)
+![alt text](images/day2/image-15.png)
 ### solved the conflict manually:
-![alt text](image-16.png)
+![alt text](images/day2/image-16.png)
 ### verified using status:
-![alt text](image-17.png)
+
+![alt text](images/day2/image-17.png)
