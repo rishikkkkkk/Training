@@ -21,25 +21,51 @@ Checking logs for errors:
 
 ## 2. Custom Docker Image (Multi-Stage & Best Practices) 
 ● Create a multi-stage Dockerfile for library-management-system that: 
+![alt text](changes/image-9.png)
 ○ Uses a builder stage to install dependencies and build artifacts. 
-○ Uses a smaller base images/image in the final stage to run the app. 
+○ Uses a smaller base images/changes/image in the final stage to run the app. 
+![alt text](changes/image-10.png)
+used builder and a python slim changes/image
 ○ Runs as a non-root user. 
 ○ Includes a .dockerignore to exclude unnecessary files. 
+![alt text](changes/image-11.png)
 ○ Uses pinned versions for base images. 
+![alt text](changes/image-12.png)
 ○ Applies caching and layer optimization. 
-● Build and tag the custom images/image. 
-● Run the images/image mapping the correct port. 
-● Push the images/image to a Docker registry. 
-● Demonstrate versioning of your images/image (e.g., tag v1, v2).
+![alt text](changes/image-13.png)
+● Build and tag the custom images/changes/image. 
+![alt text](changes/image-14.png)
+● Run the images/changes/image mapping the correct port. 
+![alt text](changes/image-15.png)
+![alt text](changes/image-16.png)
+● Push the images/changes/image to a Docker registry. 
+![alt text](changes/image-21.png)
+● Demonstrate versioning of your images/changes/image (e.g., tag v1, v2).
+![made changes](changes/image-17.png)
+![alt text](changes/image-18.png)
+![alt text](changes/image-19.png)
+![alt text](changes/image-20.png)
+
 
 ## 3. Docker Networking 
 ● Run the Flask app container together with a MySQL container from the repo: ensure 
 connectivity between them via Docker networking. 
+![alt text](changes/image-1.png)
+![alt text](changes/image-2.png)
 ● Create a custom bridge network and connect both containers so the Flask app can reach 
 the MySQL container by name. 
+![alt text](changes/image-3.png)
+![alt text](changes/image-4.png)
 ● Demonstrate host network mode with one container (if applicable). 
+![alt text](changes/image-6.png)
+![alt text](changes/image-5.png)
 ● Demonstrate none network mode for isolation. 
+![alt text](changes/image-7.png)
+![alt text](changes/image-8.png)
 ● Test connectivity between containers (e.g. using ping, curl ).
+brige connection works as well as host we can access the site
+![alt text](changes/image.png)
+but for none we cannot access the site.
 
 
 ## 4. Security & Resource Control 
