@@ -1,14 +1,14 @@
 # Task 1: Manual Deployment risks:
-1.  Inconsistent Environments
+1.  Inconsistent Environments:
     Dev, staging, and production may differ
     “Works on my machine” problem becomes common
-2.  No Version Control for Deployments
+2.  No Version Control for Deployments:
     Hard to track what was deployed and when
     Difficult to roll back to a stable version
-3.  Slow and Inefficient Process
+3.  Slow and Inefficient Process:
     Manual steps take time
     Delays in releasing features or fixes
-4.  Lack of Automation Testing
+4.  Lack of Automation Testing:
     No automatic validation before deployment
     Bugs can reach production easily
 
