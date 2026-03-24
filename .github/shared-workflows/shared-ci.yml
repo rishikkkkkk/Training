@@ -1,0 +1,14 @@
+name: shared-ci-quality-check
+on:
+workflow_call:
+jobs:
+quality-check:
+runs-on: ubuntu-latest
+steps:- uses: actions/checkout@v4- name: Run Basic CI check
+run: echo "Running Shared CI Quality Check"
+#These steps are only required for projects that include tests and linting.- uses: actions/setup-node@v4
+with:
+node-version: 18
+# Install dependencies (required for Node.js projects)- run: npm install
+# Run lint check (remove if project does not include lint script)- run: npm run lint
+# Run tests (remove if project does not include test script- run: npm tes
