@@ -2,7 +2,7 @@ name: "Task 5 : Docker Build & Push"
 on:
   push:
     branches:
-      - ci-cd-learning
+      - main
   workflow_dispatch:
 env:
   REGISTRY: docker.io
