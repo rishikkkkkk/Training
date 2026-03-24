@@ -3,6 +3,7 @@ on:
   push:
     branches:
       - ci-cd-learning
+  workflow_dispatch:
 env:
   REGISTRY: docker.io
   IMAGE_NAME: rishikkk/dockerbuild-ci-cd
