@@ -1,26 +1,17 @@
+name: Task 3: GitHub Context Variables
+
 on:
   pull_request:
     branches:
-      - main   # or your target branch
+      - main
   workflow_dispatch:
+
 jobs:
-  build:
+  print-info:
+    name: print Branch Name and Commit ID
     runs-on: ubuntu-latest
     steps:
-      - name: Build step
-        run: echo "Building application..."
-
-  test:
-    runs-on: ubuntu-latest
-    needs: build
-    steps:
-      - name: Test step
-        run: echo "Running tests..."
-      - name: Print branch and commit info
+      - name: Print Branch Name and Commit ID
         run: |
-        echo "Branch: ${{ github.ref }}"
-        echo "Commit ID: ${{ github.sha }}"
-
-      - name: Print clean branch name
-        run:  
-        echo "Branch: ${GITHUB_REF#refs/heads/}" 
+          echo "Branch Name: ${{ github.ref }}"
+          echo "Commit ID:   ${{ github.sha }}"
