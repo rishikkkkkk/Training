@@ -1,14 +1,11 @@
-name: Task 3: GitHub Context Variables
-
 on:
   pull_request:
     branches:
       - main
-  workflow_dispatch:
 
 jobs:
   print-info:
-    name: print Branch Name and Commit ID
+    name: Print Branch Name and Commit ID
     runs-on: ubuntu-latest
     steps:
       - name: Print Branch Name and Commit ID
