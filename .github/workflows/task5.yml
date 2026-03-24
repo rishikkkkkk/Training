@@ -22,9 +22,7 @@ jobs:
 
       - name: Build Image
         run: |
-          docker build \
-          --build-arg ENV=dev \
-          -t $REGISTRY/$IMAGE_NAME:$IMAGE_TAG .
+          docker build --build-arg ENV=dev -t $REGISTRY/$IMAGE_NAME:$IMAGE_TAG .
 
       - name: Push Image
         run: |
