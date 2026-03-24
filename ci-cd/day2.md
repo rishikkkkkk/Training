@@ -1,4 +1,5 @@
 # Task 1: Trigger Configuration:
+```
 on:
   pull_request:
     branches:
@@ -10,9 +11,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+```
 ![alt text](images/day2/image.png)
 
 # Task 2: Job Dependency Design:
+```
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -26,7 +29,7 @@ jobs:
     steps:
       - name: Test step
         run: echo "Running tests..."
-
+```
 ![alt text](images/day2/image-1.png)
 # Task 3: Using GitHub Context Variables
 
