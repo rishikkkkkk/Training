@@ -1,7 +1,7 @@
 on:
   pull_request:
     branches:
-      - main   # or your target branch
+      - main
   workflow_dispatch:
 
 jobs:
