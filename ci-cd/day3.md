@@ -39,7 +39,8 @@ Observe updated output.
 ## Shared-workflow for build and push:
 ``` https://github.com/clouddrove/github-shared-workflows/blob/master/.github/workflows/docker-build-push.yml ```
 ## Used shared-workflow:
-```name: Docker Build & Push
+```
+name: Docker Build & Push
 
 on:
   push:
