@@ -10,7 +10,8 @@ Create workflow file:
 Add workflow:
 ![alt text](images/day3/image.png)
 
-``` Link: https://github.com/rishikkkkkk/shared-workflows/blob/main/.github/workflows/shared-ci.yml ```
+### Link:
+``` https://github.com/rishikkkkkk/shared-workflows/blob/main/.github/workflows/shared-ci.yml ```
 
 # Task 2: Call Shared Workflow from Another Repositor
 Create another repository:
@@ -22,7 +23,8 @@ Add workflow:
 Checked the workflow by pushing json:
 ![alt text](images/day3/image-4.png)
 
-``` Link: https://github.com/rishikkkkkk/demo-project/blob/main/.github/workflows/use-shared-ci.yml ```
+### Link:
+``` https://github.com/rishikkkkkk/demo-project/blob/main/.github/workflows/use-shared-ci.yml ```
 
 # Task 3: Modify Shared Workflow & Observe Impact
 Update shared workflow:
