@@ -34,3 +34,30 @@ Pushed changes.
 Triggers workflow in demo project.
 Observe updated output.
 ![alt text](images/day3/image-5.png)
+
+# Built and pushed image to dockerhub using shared-workflow:
+## Shared-workflow for build and push:
+``` https://github.com/clouddrove/github-shared-workflows/blob/master/.github/workflows/docker-build-push.yml ```
+## Used shared-workflow:
+name: Docker Build & Push
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  docker:
+    uses: clouddrove/github-shared-workflows/.github/workflows/docker-build-push.yml@v2
+    with:
+      provider: DOCKERHUB
+      images: rishikkk/my-app
+      IMAGE_TAG: v1
+    secrets:
+      DOCKERHUB_USERNAME: ${{ secrets.DOCKERHUB_USERNAME }}
+      DOCKERHUB_PASSWORD: ${{ secrets.DOCKERHUB_PASSWORD }}
+![alt text](images/day3/imagee.png)
+![alt text](images/day3/imagee1.png)
+### verified on dockerhub:
+![alt text](images/day3/imagee-1.png)
+
