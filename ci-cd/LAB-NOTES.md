@@ -101,4 +101,4 @@ We will create a slack webhook and paste it to ```SLACK_WEBHOOK_URL``` in the Gi
 ![alt text](images/assessment-img/image-22.png)
 
 # did all practical in this github repo:
-```[Github-repo](https://github.com/rishikkkkkk/ci-cd-assessment)```
+[Github-repo](https://github.com/rishikkkkkk/ci-cd-assessment)
