@@ -1,5 +1,0 @@
-name: use-shared-ci
-on: push
-jobs:
-  run-shared-ci:
-    uses: .github/shared-workflows/shared-ci.yml@main
