@@ -104,7 +104,7 @@ docker compose down
 
 ## 🧠 Notes
 
-* Ensure ports **3001, 9090, 9100, 5000** are free
+* Ensure ports **3002, 9090, 9100, 5000** are free
 * Docker must be running before starting services
 * Use service names (not localhost) inside Prometheus config
 
