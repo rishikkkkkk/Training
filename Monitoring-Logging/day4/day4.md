@@ -185,24 +185,24 @@ services:
 ## Task 6: Infra Monitoring Dashboard:
 #### Create a dashboard with panels for:
 ```
-    ● CPU Usage:
-        rate(node_cpu_seconds_total[1m])
-    ● Memory Usage:
-        node_memory_MemAvailable_bytes
-    ● Disk Availability:
-        node_filesystem_avail_bytes
+● CPU Usage:
+    rate(node_cpu_seconds_total[1m])
+● Memory Usage:
+    node_memory_MemAvailable_bytes
+● Disk Availability:
+    node_filesystem_avail_bytes
 ```
 ![alt text](images/image-9.png)
 
 ## Task 7: Application Monitoring Dashboard:
 #### Create a dashboard with panels for:
 ```
-    ● Total number of requests
-        app_requests_total
-    ● Requests per second
-        rate(app_requests_total[1m])
-    ● Requests over time (trend)
-        increase(app_requests_total[5m])
+● Total number of requests
+    app_requests_total
+● Requests per second
+    rate(app_requests_total[1m])
+● Requests over time (trend)
+    increase(app_requests_total[5m])
 ```
 ![alt text](images/image-8.png)
 
