@@ -1,3 +1,5 @@
+# [Monitoring-app](monitoring-project)
+
 # Lab Assignment: Application Monitoring using Docker Compose
 ## Objective:
 ● Deploy a sample application using Docker Compose
@@ -223,4 +225,3 @@ services:
 
 #### Why rate-based queries are used for counters:
 ```because Counters only increase and rate() shows how fast it increases per second.```
-## Here's the path: [Monitoring-app](Training/Monitoring-Logging/day4/monitoring-project)
