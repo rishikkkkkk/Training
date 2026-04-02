@@ -68,26 +68,32 @@ metric1 ^ metric2
 ![alt text](images/image-2.png)
 
 2.  Comparison Operators:
+```
 metric1 == metric2
 metric1 != metric2
 metric1 < metric2
 metric1 > metric2
 metric1 <= metric2
 metric1 >= metric2
+```
 
 ![alt text](images/image-3.png)
 
 3.  Logical Operators:
+```
 metric1 && metric2
 metric1 || metric2
+```
 
 4.  Aggregation:   
+```
 sum(v) (calculate sum over dimensions)
 avg(v) (calculate the arithmetic average over dimensions)
 min(v) (select minimum over dimensions)
 max(v) (select maximum over dimensions)
 bottomk(k, v) (smallest k elements by sample value)
 topk(k, v) (largest k elements by sample value)
+```
 
 ![alt text](images/image-4.png)
 ![alt text](images/image-5.png)
