@@ -31,6 +31,7 @@ Value → 245
     ```node_memory_MemAvailable_bytes```
 3.  Histogram: Tracks distribution of values using buckets
     Example:
+
     ```http_request_duration_seconds_bucket{le="0.5"} 120```
     ```http_request_duration_seconds_bucket{le="1"} 200```
     ### Real-world use:
@@ -48,4 +49,12 @@ In Prometheus's expression language, an expression or sub-expression can evaluat
 4.  String - a simple string value; currently unused
 
 ## Operators:
-
+1.  Arithmetic Operators:
+```
+metric1 + metric2
+metric1 - metric2
+metric1 * metric2
+metric1 / metric2
+metric1 % metric2
+metric1 ^ metric2
+```
