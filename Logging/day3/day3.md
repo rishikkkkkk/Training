@@ -25,7 +25,6 @@ Application Logs → Filebeat → Logstash → Elasticsearch → Kibana
 ---
 
 ##  Project Structure
-![alt text](images/image.png)
 ```
 ELK-project/
 │
@@ -40,6 +39,7 @@ ELK-project/
 ├── docker-compose.yml
 ```
 
+![alt text](images/image.png)
 ---
 ## File Setup:
 
@@ -63,17 +63,22 @@ ELK-project/
 ### 2. Filebeat Configuration
 
 * Configured Filebeat to read logs from:
+
 ![alt text](images/image-1.png)
+
 * Forward logs to Logstash:
+
 ![alt text](images/image-2.png)
 ---
 
 ### 3. Logstash Pipeline
 
 * Configured Logstash to receive logs from Filebeat:
+
 ![alt text](images/image-3.png)
 
 * Added Filter:
+
 ![alt text](images/image-5.png)
 
 * Forward logs to Elasticsearch:
@@ -100,7 +105,9 @@ ELK-project/
   logs-*
   ```
 * Used `@timestamp` for time-based analysis
+
 ![alt text](images/image-6.png)
+
 ![alt text](images/image-7.png)
 ---
 
@@ -110,6 +117,7 @@ ELK-project/
 
 * Visualizes log volume using `@timestamp`
 * Helps identify spikes in activity
+
 ![alt text](images/image-8.png)
 ---
 
@@ -120,6 +128,7 @@ ELK-project/
   * `message: "ERROR"`
   * `message: "INFO"`
 * Tracks system health over time
+
 ![alt text](images/image-9.png)
 ---
 
