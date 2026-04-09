@@ -243,6 +243,21 @@ services:
 
 ![alt text](images/image-10.png)
 
+## Blockers Observed:
+```
+filebeat-1 | Exiting: error loading config file: config file ("filebeat.yml") can only be writable by the owner but the permissions are "-rwxrwxrwx" (to fix the permissions use: 'chmod go-w /usr/share/filebeat/filebeat.yml') still this issue
+```
+### Why the permission issue happened
+1.  Filebeat is security strict by design
+It checks:
+```"Is config file safe?"```
+2.  In my case
+```filebeat.yml → -rwxrwxrwx (777)```
+    Meaning:
+    ```Anyone can modify it``` 
+3.  What Filebeat expects
+```-rw------- (600)```
+
 <!--EOD Update 🚀
 
 Set up ELK stack (Elasticsearch, Logstash, Kibana) using Docker Compose
