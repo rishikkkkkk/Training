@@ -42,8 +42,117 @@ ELK-project/
 ![alt text](images/image.png)
 ---
 ## File Setup:
+### 1. `app.py`
+```
+import time
+import logging
+import random
 
+logging.basicConfig(
+    filename='logs/app.log',
+    level=logging.INFO,
+    format='%(asctime)s %(levelname)s %(message)s'
+)
 
+messages = ["User login", "Payment success", "Error processing request"]
+
+while True:
+    msg = random.choice(messages)
+    if "Error" in msg:
+        logging.error(msg)
+    else:
+        logging.info(msg)
+    time.sleep(2)
+```
+
+### 2. `Dockerfile`
+```
+FROM python:3.9
+WORKDIR /app
+COPY . .
+RUN mkdir -p logs
+CMD ["python", "app.py"]
+```
+### 3. `filebeat.yml`
+```
+filebeat.inputs:
+  - type: log
+    enabled: true
+    paths:
+      - /var/log/app/*.log
+
+output.logstash:
+  hosts: ["logstash:5044"]
+```
+### 4. `logstash.conf`
+```
+input {
+  beats {
+    port => 5044
+  }
+}
+
+filter {
+  if "ERROR" in [message] {
+    mutate {
+      add_field => { "severity" => "high" }
+    }
+  }
+}
+
+output {
+  elasticsearch {
+    hosts => ["http://elasticsearch:9200"]
+    index => "logs-%{+YYYY.MM.dd}"
+  }
+}
+```
+
+### 5. `docker-compose.yml`
+```
+version: '3.8'
+
+services:
+
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:8.5.0
+    environment:
+      - discovery.type=single-node
+      - xpack.security.enabled=false
+    ports:
+      - "9200:9200"
+
+  kibana:
+    image: docker.elastic.co/kibana/kibana:8.5.0
+    ports:
+      - "5601:5601"
+    depends_on:
+      - elasticsearch
+
+  filebeat:
+    image: docker.elastic.co/beats/filebeat:8.5.0
+    user: root
+    volumes:
+      - ./filebeat.yml:/usr/share/filebeat/filebeat.yml
+      - ./app/logs:/var/log/app
+    depends_on:
+      logstash:
+        condition: service_started
+
+  logstash:
+    image: docker.elastic.co/logstash/logstash:8.5.0
+    volumes:
+      - ./logstash.conf:/usr/share/logstash/pipeline/logstash.conf
+    ports:
+      - "5044:5044"
+    depends_on:
+      - elasticsearch
+
+  app:
+    build: ./app
+    volumes:
+      - ./app/logs:/app/logs
+```
 ##  Steps Performed
 
 ### 1. Application Logging
