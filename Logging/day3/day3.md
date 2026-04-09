@@ -242,3 +242,12 @@ services:
 ---
 
 ![alt text](images/image-10.png)
+
+<!--EOD Update 🚀
+
+Set up ELK stack (Elasticsearch, Logstash, Kibana) using Docker Compose
+Configured Filebeat to ship application logs to Logstash
+Built Logstash pipeline to process and store logs in Elasticsearch
+Verified log ingestion and index creation in Elasticsearch
+Created data view in Kibana and validated logs in Discover
+Designed dashboard>
