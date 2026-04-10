@@ -71,7 +71,7 @@ cd elk-logging
 docker-compose up -d
 ```
 
-![alt text](image.png)
+![alt text](images/image.png)
 
 ---
 
@@ -83,7 +83,7 @@ pip install -r requirements.txt
 python3 app.py
 ```
 
-![alt text](image-2.png)
+![alt text](images/image-2.png)
 
 ### 4. Verify Logs
 
@@ -91,7 +91,7 @@ python3 app.py
 tail -f ../logs/app.log
 ```
 
-![alt text](image-2.png)
+![alt text](images/image-2.png)
 
 ---
 
@@ -110,7 +110,7 @@ tail -f ../logs/app.log
   * `severity: ERROR`
   * `severity: INFO`
 
-![alt text](image-1.png)
+![alt text](images/image-1.png)
 
 ## 🔍 Kibana Exploration
 
@@ -123,7 +123,7 @@ tail -f ../logs/app.log
 app-logs-*
 ```
 
-![alt text](image-3.png)
+![alt text](images/image-3.png)
 
 ---
 
@@ -133,7 +133,7 @@ app-logs-*
 * Select data view
 * View incoming logs
 
-![alt text](image-4.png)
+![alt text](images/image-4.png)
 
 ---
 
@@ -145,13 +145,13 @@ Example:
 severity: "ERROR"
 ```
 
-![alt text](image-5.png)
+![alt text](images/image-5.png)
 
 ```
 severity: "INFO"
 ```
 
-![alt text](image-6.png)
+![alt text](images/image-6.png)
 
 ---
 
@@ -170,7 +170,7 @@ severity: "INFO"
 * Go to **Dashboard → Create**
 * Add all visualizations
 
-![alt text](image-7.png)
+![alt text](images/image-7.png)
 
 ---
 
