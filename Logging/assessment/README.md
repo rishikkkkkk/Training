@@ -170,9 +170,7 @@ severity: "INFO"
 * Go to **Dashboard → Create**
 * Add all visualizations
 
-📸 **ADD SCREENSHOT HERE (VERY IMPORTANT):**
-
-> Final dashboard with all charts
+![alt text](image-7.png)
 
 ---
 
@@ -206,6 +204,3 @@ Successfully implemented a centralized logging system using ELK stack, enabling 
 App → Filebeat → Logstash → Elasticsearch → Kibana
 ```
 
-📸 **ADD SCREENSHOT HERE (OPTIONAL):**
-
-> End-to-end flow or working proof
