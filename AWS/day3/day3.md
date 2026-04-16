@@ -71,6 +71,7 @@ ii. Create user-data to install docker on EC2.
 ![alt text](image-23.png)
 
 iii. Create 2 docker containers, apache and nginx using user-data.
+
 ![alt text](image-24.png)
 
 iv. Access content of both containers using IP:8080 (for apache), IP:80 (for
@@ -82,5 +83,6 @@ nginx
 
 # task 4: Access Private EC2 instance
 a. Create EC2 in Private Subnet and SSH into it.
+
 b. Create a flow (network) diagram that should show - how you are accessing your Private
 EC2.
