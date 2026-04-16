@@ -86,4 +86,4 @@ a. Create EC2 in Private Subnet and SSH into it.
 
 b. Create a flow (network) diagram that should show - how you are accessing your Private
 EC2.
-![alt text](images/image-27.png)
+![alt text](images/imaggg.png)
