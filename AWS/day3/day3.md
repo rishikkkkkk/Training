@@ -83,6 +83,16 @@ nginx
 
 # task 4: Access Private EC2 instance
 a. Create EC2 in Private Subnet and SSH into it.
+Firstly we will log into the public ec2 server using ssh
+![alt text](images/t1.png)
+
+add our public ec2 key to our server and give permissions:
+![alt text](images/t2.png)
+
+now using that key we can log in to our private ec2 server
+
+![alt text](images/t3.png)
+
 
 b. Create a flow (network) diagram that should show - how you are accessing your Private
 EC2.
