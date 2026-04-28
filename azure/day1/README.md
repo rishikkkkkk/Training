@@ -50,3 +50,20 @@ These are what you actually create and use.
 | IAM           | IAM                      | Azure Active Directory |
 | Serverless    | Lambda                   | Azure Functions        |
 | DevOps        | CodePipeline / CodeBuild | Azure DevOps           |
+
+
+# Management Groups
+
+Management Groups are used to organize multiple subscriptions under a single hierarchy.
+
+Exist above subscriptions
+Help apply policies and access control centrally
+Useful for managing multiple environments or teams
+ex- Tenant
+   └── Management Group: Production
+         ├── Subscription: App1-Prod
+         └── Subscription: App2-Prod
+
+   └── Management Group: Development
+         ├── Subscription: App1-Dev
+         └── Subscription: App2-Dev
