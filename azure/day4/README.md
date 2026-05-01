@@ -42,6 +42,8 @@ First, we will deploy our primary web server.
 
 ![alt text](img/image-4.png)
 
+---
+
 ## Step 2: Attach and Initialize a Data Disk on VM-01
 
 ```Why attach a separate data disk? > Your VM comes with an OS disk (where Linux lives) and a temporary disk. If you save application data to the OS disk and the VM crashes or needs resizing, you risk losing that data. A separate Data Disk is highly durable, persists independently of the VM, and can even be detached and moved to another VM if needed.```
@@ -72,6 +74,8 @@ First, we will deploy our primary web server.
 
 ```Why are we running these commands? Azure attached the physical hardware to the VM, but Linux just sees it as a raw block of storage. We must format it with a file system (ext4) and mount it to a folder so the operating system can actually save files to it.```
 
+---
+
 ## Step 3: Install the Web Server on VM-01
 
 1. Run the following commands via SSH:
@@ -88,6 +92,8 @@ echo "Hello from Server 1 ([Your-Name])" | sudo tee /var/www/html/index.html
 2. Disconnect from the SSH session
 
 ![alt text](img/image-9.png)
+
+---
 
 ## Step 4: Create the Second Virtual Machine (VM-02)
 
@@ -119,6 +125,7 @@ Public IP: Click "Create new", name it [Your-Name]-VM02-PIP and ensure SKU is St
 
 ![alt text](img/image-13.png)
 
+---
 
 ## Step 5: Install the Web Server on VM-02
 
@@ -136,6 +143,8 @@ echo "Hello from Server 2 ([Rishit])" | sudo tee /var/www/html/index.html
 3. Disconnect from the SSH session.
 
 ![alt text](img/image-14.png)
+
+---
 
 ## Step 6: Create the Azure Load Balancer
 
@@ -177,6 +186,8 @@ echo "Hello from Server 2 ([Rishit])" | sudo tee /var/www/html/index.html
 6. Click Review + create, then Create.
 
     ![alt text](img/image-20.png)
+
+---
 
 ## Step 7: Test the Load Balancer
 
