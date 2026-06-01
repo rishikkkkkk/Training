@@ -1,0 +1,5 @@
+Thank you for installing {{ include "mychart.fullname" . }}.
+To learn more about the release, try:
+
+  $ helm status {{ include "mychart.fullname" . }}
+  $ helm get all {{ include "mychart.fullname" . }}

@@ -1,0 +1,18 @@
+deployment:
+  name: nginx-deployment
+  replicas: 2
+  label: nginx
+
+container:
+  name: #nginx-container
+  image: nginx:latest
+  pullPolicy: Always
+  port: 80
+
+matchLabels:
+  app1: nginx
+  app2: apache
+
+data:
+  username: admin
+  password: rishpass123
